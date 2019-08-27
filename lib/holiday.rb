@@ -57,11 +57,11 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   output_string = ""
-  holiday_hash.each do |season_key, holiday|
-    season_key.to_s
+  holiday_hash.each do |season, holidays|
+    season.to_s
     puts "#{season_key.capitalize}:"
-    holiday.each do |holiday_key|
-      holiday_key.to_s
+    holidays.each do |holiday, supplies|
+      holiday.to_s
       puts "  #{holiday_key.capitalize}:"
       end
     end
