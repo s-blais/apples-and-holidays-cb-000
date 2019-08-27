@@ -61,6 +61,7 @@ def all_supplies_in_holidays(holiday_hash)
     season_key.to_s
     puts "#{season_key.capitalize}:"
   end
+  binding.pry
   #output_string
 end
 
