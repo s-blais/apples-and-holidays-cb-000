@@ -58,12 +58,8 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   output_string = ""
   holiday_hash.each do |season_key, holiday|
-    season_key.to_s.split.each.join(" ") do |holiday_word|
-      holiday_word.capitalize!
-    end
-    output_string << "#{holiday_word}: \n"
-  end
-  output_string
+    season_key.to_s.capitalize.puts "#{season_key}:\n"
+  #output_string
 end
 
 def all_holidays_with_bbq(holiday_hash)
