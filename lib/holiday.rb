@@ -60,8 +60,11 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season_key, holiday|
     season_key.to_s
     puts "#{season_key.capitalize}:"
-  end
-  binding.pry
+    holiday.each do |holiday_key|
+      holiday_key.to_s
+      puts "\t#{holiday_key.capitalize}:"
+      end
+    end
   #output_string
 end
 
